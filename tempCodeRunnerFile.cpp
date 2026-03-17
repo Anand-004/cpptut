@@ -1,4 +1,5 @@
-std::cout<<"\nAfter Sorting :\n";
-        // for(int i=0;i<noofEle;i++){
-        //     std::cout<<numArray[i]<<" ";
-        // }
+
+};
+
+int main(){
+    std::cout<<"\n--------Struct---------\n\n";
