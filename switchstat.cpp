@@ -9,7 +9,6 @@ int main()
 
  std::cout<<"Enter a correct option: ";
  std::cin>>opt;
-
  switch(opt){
     case 'a':
         std::cout<<"Yes youv'e seen part 1 thats partially correct";
