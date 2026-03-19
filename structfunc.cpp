@@ -13,6 +13,7 @@ struct Car
 void registerCar(Car &car1);
 void displayCar(Car car1);
 void paintCar(Car &car1);
+void back();
 
 
 int main()  
@@ -22,6 +23,7 @@ int main()
         
         Car car1;
         do{
+            std::system("clear");
             std::cout<<"\n\n.....----Paint Your Car----.....\n\n";
             
             std::cout<<"options are :\n";
@@ -34,14 +36,21 @@ int main()
             case '1':
                 std::system("clear");
                 registerCar(car1);
+                back();
                 break;
             case '2':
                 std::system("clear");
                 displayCar(car1);
+                back();
                 break;
             case '3':
                 std::system("clear");
                 paintCar(car1);
+                back();
+                break;
+            case '4':
+                std::system("clear");
+                std::cout<<"\n\n                          !!*********Thank you Visit Again**********!!\n\n";
                 break;
             default:
                 std::cout<<"\n!!!-----Please Enter a Valid option  ...!!!";
@@ -83,4 +92,12 @@ void paintCar(Car &car1)
         std::cout<<"\n Garage :\n\n"<<"What color would you like to paint your car :";
         std::cin>>car1.color;
         std::cout<<"\n!!....PAinting Finished  !";
+    }
+void back() 
+    {
+        char exitchar;
+        do{
+            std::cout<<"\n\n--Press x to go back to main menu :";
+            std::cin>>exitchar;
+        }while(exitchar!='x'&&exitchar!='X');
     }
